@@ -15,7 +15,7 @@ export default function DrawingCanvas({ tool, roomId }) {
     ctxRef.current = ctx;
 
 
-    fetch(`http://localhost:3000/api/room/${roomId}`)
+    fetch(`https://live-whiteboard-tqp7.onrender.com/api/room/${roomId}`)
       .then(res => res.json())
       .then(room => {
         room.drawingData.forEach(cmd => {
