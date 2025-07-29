@@ -7,7 +7,7 @@ export default function RoomJoin({ setRoomId }) {
 
   const joinRoom = async () => {
     if (!code.trim()) return;
-    await axios.post('https://live-whiteboard-tqp7.onrender.com/api/room/join', { roomId: code });
+    await axios.post('http://localhost:3000/api/room/join', { roomId: code });
     setRoomId(code);
   };
 

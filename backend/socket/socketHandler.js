@@ -52,7 +52,7 @@ const handelSocketConnection = (io, socket) => {
     await Room.updateOne(
       { roomId },
       {
-        $push: {
+        $set: {
             drawingData: {
             type: "clear",
             data: {},
