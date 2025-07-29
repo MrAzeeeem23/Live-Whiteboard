@@ -1,4 +1,3 @@
-// src/components/Toolbar.js
 import socket from "../socket";
 
 export default function Toolbar({ tool, setTool, roomId }) {
